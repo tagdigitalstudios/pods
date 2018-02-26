@@ -3311,7 +3311,7 @@ class PodsUI {
                                 $column_classes[] = 'sortable' . $current_sort;
                                 ?>
                                 <th scope="col"<?php echo $att_id; ?> class="<?php echo esc_attr( implode( ' ', $column_classes ) ); ?>"<?php echo $width; ?>>
-                                    <a href="<?php echo esc_url_raw( pods_query_arg( array( 'orderby' . $this->num => $field, 'orderby_dir' . $this->num => $dir ), array( 'limit' . $this->num, 'search' . $this->num, 'pg' . $this->num, 'page' ), $this->exclusion() ) ); ?>"> <span><?php echo esc_html( $attributes[ 'label' ] ); ?></span> <span class="sorting-indicator"></span> </a>
+                                    <a href="<?php echo esc_url_raw( pods_query_arg( array( 'orderby' . $this->num => $field, 'orderby_dir' . $this->num => $dir ), array( 'limit' . $this->num, 'search' . $this->num, 'pg' . $this->num, 'page', 'filter_*' . $this->num ), $this->exclusion() ) ); ?>"> <span><?php echo esc_html( $attributes[ 'label' ] ); ?></span> <span class="sorting-indicator"></span> </a>
                                 </th>
                                 <?php
                             }
