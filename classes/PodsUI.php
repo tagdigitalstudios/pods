@@ -3854,6 +3854,7 @@ class PodsUI {
 												'search' . $this->num,
 												'pg' . $this->num,
 												'page',
+												'filter_*' . $this->num
 											), $this->exclusion()
 										)
 									);
